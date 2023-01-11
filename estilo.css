@@ -1,0 +1,236 @@
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  
+  *{
+  box-sizing: border-box;
+  }
+  body{
+  margin: 0;
+  }
+  
+  /*Parte do top(topo) da página*/
+  .nav{
+  display: flex;
+  background:rgb(0, 154, 192);
+  /*background: #788592;*/
+  flex-flow:row wrap ;
+  height: 100px;
+  flex-flow: row wrap;
+  align-items: center;
+  }
+  h1 i:hover{
+    font-size: 30px;
+  }
+  .titulo{
+  flex: 10%;
+  /*border: 1px solid red;*/
+  text-align: center;
+  margin-left: 10%;
+  padding-right: 50px;
+  font-family: 'Anton', sans-serif;
+  }
+  
+  .menu{
+  flex: 70%;
+  /* border: 1px solid blue;*/
+  text-align: right;
+  padding: 20px;
+  }
+  .menu a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+  color: black;
+  font-family: 'Kanit', sans-serif;
+  }
+  .menu a:hover{
+  border-top: 4px solid #f0b217;;
+  }
+  #conectar{
+  background: #f0b217;
+  padding: 10px 25px;
+  border-radius: 12px;
+  margin-right: 5%;
+  margin-left: 45px;
+  }
+  #conectar:hover{
+  border:none;
+  }
+  
+  
+  
+  
+  
+  
+  /* Parte da sessão da página(meio), esquerda*/
+  .header{
+  display: flex;
+  flex-flow: row wrap;
+  height: 517px;
+  background-image: linear-gradient(rgb(0, 154, 192), rgb(0, 142, 167));
+  /*background-image:linear-gradient(#788592, rgb(61, 61, 61));*/
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  .cabecalho{
+  flex: 40%;
+  margin-left: 10%;
+  /*border: 1px solid black;*/
+  }
+  .cabecalho h2{
+  font-weight: 800;
+  font-size: 20px;
+  padding: 0;
+  }
+  
+  
+  .botao{
+  text-decoration: none;
+  color: white;
+  padding: 15px 40px;
+  background: black;
+  border-radius: 10px;
+  }
+  .cabecalho i{
+  font-size: 25px;
+  padding-right: 15px;
+  }
+  .paragrafo a{
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  }
+  .paragrafo i{
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.658);
+  }
+  
+  
+  
+  /* Parte da sessão da página(meio), direita*/
+  .cabecalho2{
+  margin-right: 60px;
+  flex: 20%;
+  /*border: 1px solid red;*/
+  height: 470px;
+  }
+  .cabecalho2 img{
+    height: 380px;
+    height: 380px;
+    border-radius: 20%;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 400px){
+    
+    body{
+     background:rgb(0, 142, 167);
+    }
+  
+  
+    .nav{
+     background: rgba(255, 255, 255, 0.877);
+    }
+    
+  
+    .titulo{
+     padding: 15px 0;
+     padding-right: 50px;
+    }
+  
+  
+    .menu{
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+  
+    .menu a{
+      padding: 20px 10px;
+    }
+   
+  
+    #conectar{
+      border:1px solid yellow ;
+      border-radius: 5px;
+      padding: 0 5px;
+    }
+  
+  
+    .cabecalho-paragrafo1{
+     margin-top: 100px;
+    }
+  
+  
+    .botao{
+      padding: 15px;
+    }
+  
+  
+    .paragrafo i{
+      padding-right: 15px;
+      font-size: 10px;
+    }
+  
+  
+    .cabecalho2 img{
+      height: 200px;
+      width: 300px;
+      border-radius: 20%;
+    padding-left: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    body{
+        background: rgb(0, 142, 167);
+  }
+    
+  .titulo{
+    font-size:20px;
+  }
+  
+  .menu{
+    flex: 50%;
+  }
+  
+  .menu a{
+    display: flex;
+    display: inline-block;
+  }
+     
+  
+  .cabecalho-paragrafo1{ 
+    margin-top: 150px;
+  }
+  
+  
+  .cabecalho2 img{
+    padding-left: 20px;
+    height: 180px;
+    width: 250px;
+  }
+}
