@@ -234,3 +234,34 @@
     width: 250px;
   }
 }
+
+@media screen and (max-width: 520px){
+     body{
+      background: rgb(0, 142, 167);
+     }
+
+    .titulo{
+      text-align: center;
+    }
+
+    .cabecalho-paragrafo1{
+      margin-top: 250px;
+     }
+
+    .botao{
+      padding: 15px;
+    }
+
+    .paragrafo i{
+      padding-right: 15px;
+      font-size: 10px;
+    }
+  
+  
+    .cabecalho2 img{
+      height: 200px;
+      width: 300px;
+      border-radius: 20%;
+    padding-left: 20px;
+    }
+  }
